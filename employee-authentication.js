@@ -41,7 +41,8 @@ export const handler = async (event) => {
             "Bytes": imageBytes
         }
     )
-    for (let i = 0; i<response.FaceMatches.length; i++){
+    console.log("BEfore for loop Response", response);
+    for (let match = 0; i<response.FaceMatches.length; i++){
         console.log(match.Face.FaceId, match.Face.Confidence);
         
         //implement query
