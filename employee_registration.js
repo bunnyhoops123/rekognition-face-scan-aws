@@ -1,3 +1,9 @@
+/*
+Ensure images are .jpeg or .png
+Ensure file name is of the name -->  "firstname_lastname.jpeg or .png"
+
+*/
+
 import { S3Client, ListBucketsCommand } from "@aws-sdk/client-s3";
 import  { RekognitionClient, IndexFacesCommand  } from '@aws-sdk/client-rekognition';
 import ddb from "@aws-sdk/lib-dynamodb";
